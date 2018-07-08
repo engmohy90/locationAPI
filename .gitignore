@@ -1,6 +1,5 @@
-
 # Created by https://www.gitignore.io/api/pycharm,python,django
-
+dist123
 ### Django ###
 *.log
 *.pot

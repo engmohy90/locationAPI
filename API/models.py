@@ -20,3 +20,13 @@ class Campaigns(models.Model):
         max_length=20)
     Stop_Date = models.DateField()
     Description = models.TextField()
+
+class locations(models.Model):
+    """
+    model to save Campaigns Details
+
+    """
+    Name = models.CharField(max_length=200)
+    location = models.CharField(max_length=200)
+    
+
