@@ -24,7 +24,7 @@ SECRET_KEY = '@%iw6kc52o$abg9+sn^bxg9(^%2mdn)dpvuua_pvrvh1=7k+0^'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -130,4 +130,4 @@ STATIC_URL = '/static/'
 
 # chage on production to server dns
 CORS_ORIGIN_ALLOW_ALL = True
-
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
