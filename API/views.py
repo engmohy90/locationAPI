@@ -3,7 +3,7 @@ from __future__ import unicode_literals
 
 # from rest_framework import generics
 from rest_framework import viewsets
-
+from django.shortcuts import render
 from .models import Campaigns
 from .serializer import CampaignsSerializer
 from .serializer import locationSerializer
@@ -15,3 +15,10 @@ class ListCampaigns(viewsets.ModelViewSet):
 class ListLocations(viewsets.ModelViewSet):
     queryset = locations.objects.all()
     serializer_class = locationSerializer
+
+
+
+
+
+def push_test(request):
+    return render(request, 'index.html')

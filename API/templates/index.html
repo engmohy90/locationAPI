@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test push</title>
+</head>
+<body onload="send()">
+<button onclick="send()">
+    send push
+</button>
+<script>
+    debugger;
+
+    function send() {
+        window.parent.postMessage('cmsUserSessionId:1', '*');
+    }
+
+    // document.onload(send())
+</script>
+</body>
+</html>
