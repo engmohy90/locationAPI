@@ -10,7 +10,7 @@ class Temperature(models.Model):
 
     """
 
-    temp = models.IntegerField()
+    temp = models.FloatField()
     date = models.DateTimeField(auto_now=True)
     # Status = models.CharField(
     #     choices=(('Enabled', 'Enabled'), ('Disabled', 'Disabled')),
