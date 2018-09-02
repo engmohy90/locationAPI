@@ -1,17 +1,16 @@
 from rest_framework import serializers
 
-from .models import Campaigns
-from .models import locations
+from .models import Temperature
+# from .models import locations
 
 
-class CampaignsSerializer(serializers.ModelSerializer):
+class TemperatureSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Campaigns
+        model = Temperature
         fields = '__all__'
 
-        
-class locationSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = locations
-        fields = '__all__'
+# class locationSerializer(serializers.ModelSerializer):
+#     class Meta:
+#         model = locations
+#         fields = '__all__'
 
